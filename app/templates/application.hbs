@@ -1,2 +1,35 @@
+<!-- Top nav -->
+
+{{#bs-navbar as |navbar|}}
+  <div class="container">
+    {{navbar.toggle}}
+    <a class="navbar-brand" href='/'>Ashuvidz</a>
+    {{#navbar.content}}
+      {{#navbar.nav as |nav|}}
+        {{#nav.item}}
+          {{#nav.link-to "planning"}}Planning{{/nav.link-to}}
+        {{/nav.item}}
+        {{#nav.item}}
+          {{#nav.link-to "video"}}Video{{/nav.link-to}}
+        {{/nav.item}}
+        {{#nav.item}}
+          {{#nav.link-to "guilds"}}Guilds{{/nav.link-to}}
+        {{/nav.item}}
+        {{#nav.item}}
+          {{#nav.link-to "apropos"}}A Propos{{/nav.link-to}}
+        {{/nav.item}}
+        {{#nav.item}}
+          <a href='https://forum.ashuvidz.com/'>Forum</a>
+        {{/nav.item}}
+        {{#nav.item}}
+          <a href='https://blog.ashuvidz.com/'>Blog</a>
+        {{/nav.item}}
+        {{#nav.item}}
+          <a href='https://shop.spreadshirt.fr/ashuvidz/'>Goodies</a>
+        {{/nav.item}}
+      {{/navbar.nav}}
+    {{/navbar.content}}
+  </div>
+{{/bs-navbar}}
 
 {{outlet}}
