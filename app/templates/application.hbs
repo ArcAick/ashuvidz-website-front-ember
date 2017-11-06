@@ -3,7 +3,7 @@
 {{#bs-navbar as |navbar|}}
   <div class="container">
     {{navbar.toggle}}
-    <a class="navbar-brand" href='/'>Ashuvidz</a>
+    {{#link-to "index"}}<a class="navbar-brand">Ashuvidz</a>{{/link-to}}
     {{#navbar.content}}
       {{#navbar.nav as |nav|}}
         {{#nav.item}}
@@ -19,13 +19,13 @@
           {{#nav.link-to "apropos"}}A Propos{{/nav.link-to}}
         {{/nav.item}}
         {{#nav.item}}
-          <a href='https://forum.ashuvidz.com/'>Forum</a>
+          <a href='https://forum.ashuvidz.com/' target="_blank">Forum</a>
         {{/nav.item}}
         {{#nav.item}}
-          <a href='https://blog.ashuvidz.com/'>Blog</a>
+          <a href='https://blog.ashuvidz.com/' target="_blank">Blog</a>
         {{/nav.item}}
         {{#nav.item}}
-          <a href='https://shop.spreadshirt.fr/ashuvidz/'>Goodies</a>
+          <a href='https://shop.spreadshirt.fr/ashuvidz/' target="_blank">Goodies</a>
         {{/nav.item}}
       {{/navbar.nav}}
     {{/navbar.content}}
@@ -33,3 +33,19 @@
 {{/bs-navbar}}
 
 {{outlet}}
+
+<footer class='footer hidden-xs'>
+  <div class='row'>
+    <div class='col-xs-2 col-md-2'></div>
+    <div class='col-xs-4 col-md-4'>
+      <p><a href='mailto:ashuvidz@gmail.com'>Contact</a> | <a href='https://www.vsfreelance.com/' target="_blank">Pro</a></p><p>Made by Vyrtual Synthese &amp; Dachi Community with <span class='glyphicon glyphicon-heart'></span></p>
+    </div>
+    <div class='col-xs-4 col-md-4 text-right'>
+      <a href='http://youtube.com/ashuvidz/' target="_blank"><i class='fa fa-youtube-play fa-2x' aria-hidden='true'></i></a>
+      <a href='http://twitch.tv/ashuvidz/' target="_blank"><i class='fa fa-twitch fa-2x' aria-hidden='true'></i></a>
+      <a href='http://facebook.com/ashuvidz/' target="_blank"><i class='fa fa-facebook-official fa-2x' aria-hidden='true'></i></a>
+      <a href='http://twitter.com/ashuvidz/' target="_blank"><i class='fa fa-twitter-square fa-2x' aria-hidden='true'></i></a>
+    </div>
+    <div class='col-xs-2 col-md-2'></div>
+  </div>
+</footer>
