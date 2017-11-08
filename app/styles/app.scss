@@ -7,23 +7,6 @@
   padding: 0;
 }
 
-div[id*="gw2section"] p, div[id*="gw2section"] li, div[id*="ffxivsection"] p, div[id*="ffxivsection"] li, div[id*="bdosection"] p, div[id*="bdosection"] li {
-  font-size: 1.8em;
-  text-align: center;
-}
-
-div[id*="gw2section"], div[id*="ffxivsection"], div[id*="bdosection"] {
-  min-height: 900px;
-}
-
-div[id*="section"]:first-of-type {
-  min-height: 1000px;
-}
-
-div[id*="section"]:first-of-type>.container {
-  margin-top: 50px;
-}
-
 /*----*/
 
 html,body{
