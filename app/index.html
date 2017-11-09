@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ashuvidz : Première chaine MMO de France</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ashuvidz : Première chaine MMO de France</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{content-for "head"}}
+  {{content-for "head"}}
 
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/ashuvidz-website-ember.css">
+  <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+  <link integrity="" rel="stylesheet" href="{{rootURL}}assets/ashuvidz-website-ember.css">
 
-    {{content-for "head-footer"}}
-  </head>
-  <body>
-    {{content-for "body"}}
+  {{content-for "head-footer"}}
+</head>
+<body>
+{{content-for "body"}}
 
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/ashuvidz-website-ember.js"></script>
+<script src="{{rootURL}}assets/vendor.js"></script>
+<script src="{{rootURL}}assets/ashuvidz-website-ember.js"></script>
 
-    {{content-for "body-footer"}}
-  </body>
+
+<!--
+<script>
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  var player = null;
+  var youtubeReady = false;
+  window.onYouTubeIframeAPIReady = function () {
+    youtubeReady = true;
+    youtubeRenderHome();
+  };
+  function youtubeRenderHome(){
+    if(player !== null){delete player; player = null};
+    player = new YT.Player('player', {
+      height: '720',
+      width: '1280',
+      playerVars:
+        {
+          listType: 'user_uploads',
+          list: 'Ashuvidz'
+        }
+    });
+  }
+</script>
+-->
+{{content-for "body-footer"}}
+</body>
 </html>
