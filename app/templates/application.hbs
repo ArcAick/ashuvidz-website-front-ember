@@ -11,20 +11,24 @@
           <a href='https://youtube.com/ashuvidz/' target="_blank">Vidéos</a>
         {{/nav.item}}
         {{#nav.item}}
-          {{#nav.link-to "apropos"}}A Propos{{/nav.link-to}}
+          <a href='https://www.twitch.tv/ashuvidz/events' target="_blank">Planning</a>
         {{/nav.item}}
         {{#nav.item}}
-          {{#nav.link-to "guilds"}}Guilds{{/nav.link-to}}
-        {{/nav.item}}
-        {{#nav.item}}
-          <a href='https://forum.ashuvidz.com/' target="_blank">Forum</a>
+          <a href='https://shop.spreadshirt.fr/ashuvidz/' target="_blank">Goodies</a>
         {{/nav.item}}
         {{#nav.item}}
           <a href='https://blog.ashuvidz.com/' target="_blank">Blog</a>
         {{/nav.item}}
         {{#nav.item}}
-          <a href='https://shop.spreadshirt.fr/ashuvidz/' target="_blank">Goodies</a>
+          {{#nav.link-to "apropos"}}A Propos{{/nav.link-to}}
         {{/nav.item}}
+        {{#nav.dropdown tagName="li" as |dd|}}
+          {{#dd.toggle}}Communauté <span class="caret"></span>{{/dd.toggle}}
+          {{#dd.menu as |ddm|}}
+            {{#ddm.item}}{{#link-to "guilds"}}Guilds{{/link-to}}{{/ddm.item}}
+            {{#ddm.item}}<a href='https://forum.ashuvidz.com/' target="_blank">Forum</a>{{/ddm.item}}
+          {{/dd.menu}}
+        {{/nav.dropdown}}
       {{/navbar.nav}}
     {{/navbar.content}}
   </div>
@@ -36,7 +40,7 @@
   <div class='row'>
     <div class='col-xs-2 col-md-2'></div>
     <div class='col-xs-4 col-md-4'>
-      <p><a href='mailto:ashuvidz@gmail.com'>Contact</a> | <a href='https://www.vsfreelance.com/' target="_blank">Pro</a></p><p>Made by Vyrtual Synthese &amp; Dachi Community with <span class='glyphicon glyphicon-heart'></span></p>
+      <p><a href='mailto:ashuvidz@gmail.com'>Contact</a></p><p>Made by Vyrtual Synthese &amp; Dachi Community with <span class='glyphicon glyphicon-heart'></span></p>
     </div>
     <div class='col-xs-4 col-md-4 text-right'>
       <a href='http://youtube.com/ashuvidz/' target="_blank"><i class='fa fa-youtube-play fa-2x' aria-hidden='true'></i></a>
