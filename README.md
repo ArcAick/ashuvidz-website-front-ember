@@ -1,7 +1,6 @@
 # ashuvidz-website-ember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Ceci est une refonte du site Ashuvidz en version EmberJS.
 
 ## Prerequisites
 
